@@ -4,6 +4,7 @@ import type { AppProps } from 'next/app';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { MOBILE_SITE_URL } from '../data/constants';
+import OneSignal from 'react-onesignal';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const Router = useRouter();
@@ -13,7 +14,15 @@ function MyApp({ Component, pageProps }: AppProps) {
       Router.push(MOBILE_SITE_URL + Router.asPath);
     }
   };
+
   useEffect(() => {
+    OneSignal.init({
+      appId: '9b36e5a0-3f9c-4d16-803f-17a5fb067db9',
+      notifyButton: {
+        enable: true,
+      },
+    });
+
     if (window.innerWidth <= 820) {
       Router.push(MOBILE_SITE_URL + Router.asPath);
     } else {
