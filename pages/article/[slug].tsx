@@ -120,9 +120,9 @@ function Article({ data }: any) {
               style={{ fontSize: '24px', padding: '0 2.5px' }}
               onClick={() => {
                 openPopup(
-                  `https://' +
-                    ${isMobileOrTablet() ? 'api' : 'web'} +
-                    '.whatsapp.com/send?text=${SITE_URL + '/article/' + data.attributes.slug}`,
+                  `https://'${isMobileOrTablet() ? 'api' : 'web'}'.whatsapp.com/send?text=${
+                    SITE_URL + '/article/' + data.attributes.slug
+                  }`,
                 );
               }}
             />
