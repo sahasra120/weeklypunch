@@ -1,5 +1,5 @@
 export const SITE_URL: string = 'https://weeklypunch.vercel.app';
-export const MOBILE_SITE_URL: string = 'https://m-weeklypunch.me';
+export const MOBILE_SITE_URL: string = 'https://m-weeklypunch.vercel.app';
 export const API_URL: string = 'https://weeklypunch-backend.herokuapp.com';
 
 export const BLOGS_META_QUERY =
