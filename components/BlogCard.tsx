@@ -37,11 +37,11 @@ function BlogCard(props: Props) {
         }
         hoverable
         actions={[
-          <div>
+          <div key="author">
             <EditOutlined />
             <p>{props.author}</p>
           </div>,
-          <div>
+          <div key="date">
             <ClockCircleOutlined />
             <p>
               {new Date(props.date).getDate().toString() +
@@ -51,7 +51,7 @@ function BlogCard(props: Props) {
                 new Date(props.date).getFullYear().toString()}
             </p>
           </div>,
-          <div>
+          <div key="likes">
             <HeartOutlined />
             <p>{props.likes}</p>
           </div>,

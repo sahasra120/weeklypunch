@@ -24,7 +24,7 @@ function BlogComment(props: Props) {
         content={<p>{props.content}</p>}
         datetime={<p>{new Date(props.date).toDateString()}</p>}
         actions={[
-          <Button type="text" size="small" onClick={() => setShowEditor(true)}>
+          <Button key="reply" type="text" size="small" onClick={() => setShowEditor(true)}>
             Reply
           </Button>,
         ]}

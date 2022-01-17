@@ -121,11 +121,11 @@ const Home = ({ data }: Props) => {
         <h1 className="title">About Us</h1>
         <Card hoverable>
           <p>
-            Hi there I'm so glad you're here ! I'm honoured that you want to get to know me a little
+            {` Hi there I'm so glad you're here ! I'm honoured that you want to get to know me a little
             better if you stumbled across this page on accident. I'm a blogger , I write all about
             motivational and inspirational stories here , I started this blog without any idea what
             I wanted to do , then it becomes my goal to motivate all to reach their full potenial
-            while living happy lives !
+            while living happy lives !`}
           </p>
           <br />
           <Card.Meta description="instagram.com/weekly_punch" />

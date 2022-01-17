@@ -93,7 +93,7 @@ function Article({ data }: any) {
         <VoiceDialog content={data.attributes.content} />
         <br />
         <article style={{ textAlign: 'justify', padding: '20px' }}>
-          <ReactMarkdown children={data.attributes.content} />
+          <ReactMarkdown>{data.attributes.content}</ReactMarkdown>
         </article>
         <br />
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
